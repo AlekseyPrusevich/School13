@@ -265,7 +265,8 @@ a:hover {
   background-image: url('https://investnewsman.com/wp-content/uploads/2019/04/maxresdefault.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 20% 70%;
+  background-position: 20% 80%;
+  background-attachment: fixed;
   margin-top: 160px;
   background-color: var(--main-color);
 }
@@ -277,11 +278,12 @@ a:hover {
   padding-bottom: 96px;
 }
 
-.audio-guide__content {
+.quality-year__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .quality-year__title {
   margin: 0;
@@ -300,6 +302,13 @@ a:hover {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.quality-year__button:hover {
+  color: var(--main-bg-color);
+  border-color: var(--main-bg-color);
+  background-color: transparent;
 }
 
 /* Work */
@@ -410,10 +419,6 @@ a:hover {
   font-size: 96px;
   text-transform: uppercase;
   color: var(--main-bg-color);
-}
-
-.audio-guide__text {
-  color: #b3b1b4;
 }
 
 .audio-guide__button {
