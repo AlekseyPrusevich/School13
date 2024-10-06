@@ -36,6 +36,62 @@
        url('../fonts/Montserrat-Light.woff') format('woff');
   }
 
+
+
+  .animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  .animated.hinge {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+      -ms-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  
+
+
 /* Common Styles */
 
 *,
@@ -120,25 +176,20 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  width: 57px;
-  height: 57px;
-  margin-right: 9px;
-  border-radius: 50%;
-  background-color: #2b2a2c;
-  overflow: hidden;
-  backface-visibility: hidden;
 }
 
 .logo__name {
+  margin-left: 16px;
+  font-size: 24px;
   margin-bottom: 3px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
+  color: white;
 }
 
-.logo__post {
-  font-size: 12px;
-  line-height: 1.25;
+.logo__image {
+  width: 90px;
+  height: 90px;
 }
 
 /* Header Nav */
@@ -148,18 +199,19 @@ a:hover {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
-  margin: 5px -22px 0 0;
+  height: 100%;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .header-nav__item {
   position: relative;
   display: block;
-  padding: 8px 24px;
-  font-size: 14px;
+  padding: 12px 24px;
+  font-size: 20px;
   font-weight: 700;
-  margin: 0 8px;
+  margin: 0 16px;
   text-decoration: none;
   transition: all .2s ease;
   cursor: pointer;
@@ -292,6 +344,25 @@ a:hover {
   z-index: -1;
 }
 
+.hero__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__text {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  max-width: 60%;
+  text-transform: uppercase;
+}
 
 .quality-year {
   background-image: url('https://investnewsman.com/wp-content/uploads/2019/04/maxresdefault.jpg');
@@ -341,6 +412,32 @@ a:hover {
   color: var(--main-bg-color);
   border-color: var(--main-bg-color);
   background-color: transparent;
+}
+
+/* Quote */
+
+.quote {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.quote__container {
+  gap: 3%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.quote__content {
+  font-size: 24px;
+}
+
+.quote__content p {
+  margin-bottom: 32px;
+}
+
+.quote__author {
+  margin-top: 42px;
+  margin-left: 40%;
 }
 
 /* Work */
@@ -595,10 +692,6 @@ a:hover {
   .logo__pic {
     width: 35px;
     height: 35px;
-  }
-
-  .logo__name {
-    font-size: 14px;
   }
 
   .header-nav {

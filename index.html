@@ -8,10 +8,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="styles/style.css">
-  <script src="js/wow.min.js"></script>
-  <script>
     new WOW().init();
-  </script> 
 </head>
 <body>
 
@@ -19,11 +16,8 @@
     <div class="header__wrap container">
       <div class="logo">
         <div class="logo__pic">
-          <img src="https://source.unsplash.com/random/57x57" alt="Alexey Prusevich">
-        </div>
-        <div class="logo__text">
+          <img class="logo__image" src="/img/logo.png" alt="logo">
           <div class="logo__name">Alexey Prusevich</div>
-          <div class="logo__post">UI & UX Designer</div>
         </div>
       </div>
       <nav class="header-nav">
@@ -63,6 +57,38 @@
         <source src="video/Belarus.webm" type='video/webm; codecs="vp8, vorbis"'>
         <source src="video/Belarus.ogv" type='video/ogg;  codecs="theora, vorbis"'>
       </video>
+      <div class="hero__content">
+        <p class="hero__text">
+          80 лет освобождения беларуси от немецко-фашистских захватчиков
+        </p>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="quote__container fadeInUp wow">
+        <blockquote class="quote__content">
+          <p>
+            …Больно осознавать, сколько новых жизней так и не появилось на свет, сколько детей не повзрослело, сколько судеб оборвалось из-за безумных идей, слепой ненависти и кровавой жестокости.
+          </p>
+          <p>
+            Спустя годы горечь и гнев не утихают. Особенно сегодня, когда чума нацизма обрела последователей среди наемников, предателей и преступников и вплотную подобралась к нашим границам.
+          </p>
+            У белорусов для них был и остается один ответ - дух всенародного сопротивления. 
+            Его символ - непокоренный человек, который, восстав живым из огня, с телом мертвого сына на руках сквозь время несёт вечное проклятие фашизму. 
+          <p>
+            Долг ныне живущих перед павшими - изобличить виновных в массовом геноциде, бережно хранить память о тех страшных событиях и не дать беде вновь разыграться на нашей святой земле. 
+          </p>
+          <p>
+            Светлая память всем погибшим! Вечная слава их бессмертному подвигу во имя мира для будущих поколений!
+          </p>
+        </blockquote>
+        <p class="quote__author">
+          <cite>Из обращения Президента Республики Беларусь
+          А.Г.Лукашенко к соотечественникам
+          по случаю 80-летия трагедии в Хатыни
+          </cite>
+        <p>
+      </div>
     </section>
 
     <section class="quality-year">
@@ -218,5 +244,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="script/wow.min.js"></script>
+  <script>new WOW().init();</script>
 </body>
 </html>
