@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+       url('../fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Montserrat Italic'), local('Montserrat-Italic'),
+       url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+       url('../fonts/Montserrat-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+       url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  --main-color: #2b2a2c;
+  --main-bg-color: white;
+}
+
+body {
+  min-width: 300px;
+  background-color: #fff;
+  background-image: url(/img/heros/hero-background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.hero__main {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.hero__section {
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 48px;
+}
+
+.hero__section--black {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.hero__section--black .hero__title p {
+  color: #c2c2c2;
+}
+
+.hero__section--white {
+  background-color: #f5f5f5;
+}
+
+.hero__section:nth-child(even) .hero__content .hero__title {
+  order: -1;
+}
+
+.hero__content {
+  margin-bottom: 32px;
+}
+
+.hero__content {
+  display: flex;
+  gap: 32px;
+}
+
+.hero__images {
+  height: 480px;
+}
+
+.hero__images img {
+  height: 480px;
+  width: 720px;
+  object-fit: cover;
+}
+
+.hero__title h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero__title p {
+  font-size: 14px;
+  color: #444345;
+  font-style: italic;
+}
+
+.hero__about p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,173 @@
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  --main-color: #2b2a2c;
+  --main-bg-color: white;
+}
+
+body {
+  min-width: 300px;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Карта */
+
+.belarus-map__wrapper {
+    max-width: 1440px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.belarus__map {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6em; 
+  }
+  
+  .main-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .map__warp {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  
+  .main-map__region {
+    stroke: #ffffff;
+  }
+  
+  .main-map__region:hover {
+    transition: .5s;
+  }
+  
+  .main-map__Brest {
+    fill: rgb(219, 226, 131);
+  }
+  
+  .main-map__Gomel {
+    fill: rgb(255, 247, 177);
+  }
+  
+  .main-map__Mogilev {
+    fill: rgb(251, 217, 202);
+  }
+  
+  .main-map__Vitebsk {
+    fill: rgb(210, 205, 231); 
+  }
+  
+  .main-map__Grodno {
+    fill: rgb(253, 213, 165);
+  }
+  
+  .main-map__Minsk {
+    fill: rgb(245, 180, 210);
+  }
+  
+  .main-map__Brest:hover {
+    fill: rgb(213, 223, 82);
+  }
+  
+  .main-map__Gomel:hover {
+    fill: rgb(245, 231, 108);
+  }
+  
+  .main-map__Mogilev:hover {
+    fill: rgb(241, 181, 155);
+  }
+  
+  .main-map__Vitebsk:hover {
+    fill: rgb(170, 161, 211); 
+  }
+  
+  .main-map__Grodno:hover {
+    fill: rgb(231, 176, 108);
+  }
+  
+  .main-map__Minsk:hover {
+    fill: rgb(233, 147, 187);
+  }
+  
+  .main-map__city:hover {
+    transition: .5s;
+    r: 1.2em;
+  }
+  
+  .main-map__City-of-Minsk:hover {
+    transition: .5s;
+    r: 1.5em;
+  }
+  
+  .main-map__city_Baranovichi:hover {
+    r: 1em;
+  }
+  
+  .main-map__city {
+    fill: red;
+  }
+  
+  .main-map__city-name {
+    font-weight: bold;
+    stroke: none;
+    color: #181818;
+    font-size: 1,2em;
+  }
+  
+  .main-map__tooltip {
+    display: none;
+    padding: 0.8em; 
+    width: 22em;
+    min-height: 10em;
+    position: absolute;
+    background-color: rgba(230, 230, 230, 0.7);
+    color: rgb(0, 0, 0);
+    z-index: 2;
+  }
+  
+  .main-map__tooltip img {
+    display: block;
+    margin: 0 auto;
+    height: 9em;
+  }
+  
+  .main-map__tooltip ul {
+    padding: 0;
+    padding-left: 1.4em;
+    margin-bottom: 0;
+  }
+  
+  .main-map__tooltip p, 
+  .main-map__tooltip li {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .baranovichi-circle circle {
+    stroke: #ffffff;
+  }
