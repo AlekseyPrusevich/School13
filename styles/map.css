@@ -19,6 +19,7 @@ html {
 body {
   min-width: 300px;
   background-color: #fff;
+  margin: 0;
 }
 
 img {
@@ -27,12 +28,27 @@ img {
   max-height: 100%;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 4em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+
+p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  text-indent: 3em;
+}
+
 /* Карта */
 
 .belarus-map__wrapper {
-    max-width: 1440px;
+    max-width: 1200px;
     padding: 0 16px;
-    margin: 0 auto;
+    margin: 0 auto 200px;
 }
 
 .belarus__map {
@@ -170,4 +186,155 @@ img {
   
   .baranovichi-circle circle {
     stroke: #ffffff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .region-of-Belarus {
+    display: none;
+    transition: 1s;
+    width: 100%;
+    min-height: 1080px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+    background-size: cover;
+    color: white;
+    z-index: 0;
+  }
+  
+  .region-of-Belarus_warp {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-bottom: 4em;
+  }  
+  
+  .region__img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .region__map_img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .region-of-Belarus ul {
+    padding: 0;
+    margin-left: 3em;
+  }
+  
+  .close-region {
+    margin: 1em 0 0 auto;
+  }
+  
+  .close-region_svg {
+    width: 4em;
+    height: 4em;
+    fill: rgba(50, 55, 159, 0.9);
+    border: 0.2em solid rgba(50, 55, 159, 0.9);
+    border-radius: 50%;
+  }
+  
+  .close-region_svg polyline {
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-width: 0.2em;
+  }
+  
+  .close-region_svg:hover {
+    transition: 0.3s;
+    stroke-width: 0.2em;
+    fill: rgba(255, 255, 255, 0.9);
+    stroke:rgba(50, 55, 159, 0.8); 
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+  }
+  
+  .close-region_svg:hover > polyline {
+    stroke:rgba(50, 55, 159, 0.8); 
+  }
+  
+  /* БРЕСТСКАЯ ОБЛАСТЬ */
+  
+  .Brest-region {
+    background-image:url(/img/region/background/brest-background.png);
+  }
+  
+  .region__map__city_Brest:hover {
+    r: 1.8em;
+  }
+  
+  .region__map_city-name {
+    font-size: 1.7em;
+  }
+  
+  .region__map__city-name_Baranivi {
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+  
+  .brest-region__map_region {
+    stroke:white;
+    stroke-width: 3px;
+    fill: rgb(252, 225, 135);
+    stroke-miterlimit: 10;
+  }
+  
+  .brest-region__map_region:hover {
+    transition: .3s;
+    fill: rgb(255, 220, 105);
+  }
+  
+  .region-map__tooltip {
+    display: none;
+    position: absolute;
+    padding: 0.6em; 
+    width: 18em;
+    min-height: 10em;
+    background-color: rgba(230, 230, 230, 0.7);
+    color: rgb(0, 0, 0);
+    z-index: 2;
+  }
+  
+  .region-map__tooltip img {
+    display: block;
+    margin: 0 auto;
+    height: 7em;
+  }
+  
+  .region-map__tooltip ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 1em;
+  }
+  
+  .region-map__tooltip p, 
+  .region-map__tooltip li {
+    text-indent: 1.5em;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Gomel-region {
+    background-image: url(/img/region/background/gomel-background.png);
+  }
+  
+  .Mogilev-region {
+    background-image: url(/img/region/background/mogilev-background.png);
+  }
+  
+  .Vitebsk-region {
+    background-image: url(/img/region/background/vitebsk-background.png);
+  }
+  
+  .Grodno-region {
+    background-image: url(/img/region/background/grodno-background.png);
+  }
+  
+  .Minsk-region {
+    background-image: url(/img/region/background/minsk-background.png);
   }
