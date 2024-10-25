@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Montserrat Italic'), local('Montserrat-Italic'),
+         url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+         url('../fonts/Montserrat-Italic.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat-Bold.woff') format('woff');
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+    outline: none;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    --main-color: #2b2a2c;
+    --main-bg-color: white;
+  }
+  
+  body {
+    min-width: 300px;
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .camp__bg {
+    background-image: url(/img/memory/camp_bg.jpg);
+  }
+
+  .villages__bg {
+    background-image: url(/img/memory/villages_bg.jpg);
+  }
+
+  .survivors__bg {
+    background-image: url(/img/memory/survivors_bg.jpg);
+  }
+
+  .today__bg {
+    background-image: url(/img/memory/today_bg.jpg);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .block__main {
+    max-width: 980px;
+    padding: 0 16px;
+    margin: 120px auto;
+  }
+
+  .block__main h3 {
+    margin-top: 96px;
+    font-size: 36px;
+  }
+
+  .block__main p {
+    font-size: 22px;
+  }
+
+
+  

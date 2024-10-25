@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Montserrat Italic'), local('Montserrat-Italic'),
+         url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+         url('../fonts/Montserrat-Italic.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat-Bold.woff') format('woff');
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+    outline: none;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    --main-color: #2b2a2c;
+    --main-bg-color: white;
+  }
+  
+  body {
+    min-width: 300px;
+    background-color: #fff;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .memory__main {
+    max-width: 980px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  .memory__texts p {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .memory__author {
+    text-align: right;
+    font-style: italic;
+    padding-left: 80px;
+    margin-top: 48px;
+  }
+
+  .memory__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    margin-top: 80px;
+  }
+
+  .memory__card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all .3s ease;
+  }
+
+  .memory__card:hover {
+    box-shadow: 0px 2px 14px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .memory__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .card__content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 24px 16px 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
+  }
+
+  .card__content p {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+  }
+
+
+
+  
