@@ -46,7 +46,7 @@ html {
 body {
   min-width: 300px;
   background-color: #fff;
-  background-image: url(/img/heros/hero-background.jpg);
+  background-image: url(../img/heros/hero-background.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
