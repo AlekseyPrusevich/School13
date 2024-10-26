@@ -320,21 +320,21 @@ p {
   }
   
   .Gomel-region {
-    background-image: url(img/region/background/gomel-background.png);
+    background-image: url(/img/region/background/gomel-background.png);
   }
   
   .Mogilev-region {
-    background-image: url(img/region/background/mogilev-background.png);
+    background-image: url(/img/region/background/mogilev-background.png);
   }
   
   .Vitebsk-region {
-    background-image: url(img/region/background/vitebsk-background.png);
+    background-image: url(/img/region/background/vitebsk-background.png);
   }
   
   .Grodno-region {
-    background-image: url(img/region/background/grodno-background.png);
+    background-image: url(/img/region/background/grodno-background.png);
   }
   
   .Minsk-region {
-    background-image: url(img/region/background/minsk-background.png);
+    background-image: url(/img/region/background/minsk-background.png);
   }
