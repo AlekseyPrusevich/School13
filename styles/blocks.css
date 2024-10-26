@@ -83,14 +83,37 @@
     margin: 120px auto;
   }
 
-  .block__main h3 {
+  .block__wrap {
     margin-top: 96px;
+  }
+
+  
+  .block__container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .block__content {
+    width: 70%;
+  }
+
+  .block__image {
+    width: 30%;
+    align-self: flex-start;
+    margin-top: 80px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .block__main h3 {
+    margin-top: 0;
     font-size: 36px;
   }
 
   .block__main p {
     font-size: 22px;
   }
+
 
 
   
