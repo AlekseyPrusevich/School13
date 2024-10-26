@@ -55,19 +55,19 @@
   }
 
   .camp__bg {
-    background-image: url(/img/memory/camp_bg.jpg);
+    background-image: url(img/memory/camp_bg.jpg);
   }
 
   .villages__bg {
-    background-image: url(/img/memory/villages_bg.jpg);
+    background-image: url(img/memory/villages_bg.jpg);
   }
 
   .survivors__bg {
-    background-image: url(/img/memory/survivors_bg.jpg);
+    background-image: url(img/memory/survivors_bg.jpg);
   }
 
   .today__bg {
-    background-image: url(/img/memory/today_bg.jpg);
+    background-image: url(img/memory/today_bg.jpg);
   }
 
   img {
