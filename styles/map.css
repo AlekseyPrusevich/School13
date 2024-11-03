@@ -20,6 +20,9 @@ body {
   min-width: 300px;
   background-color: #fff;
   margin: 0;
+  background-image: url(https://avatars.mds.yandex.net/i?id=4d15a4f5cf2a56e53f73f4f6d62301b9_l-5354312-images-thumbs&n=13);
+  background-size: cover;
+  background-position: 50%;
 }
 
 img {
