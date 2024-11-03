@@ -113,8 +113,9 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/img/herosRegion/bg.png);
+  background-image: url(../img/herosRegion/bg.png);
   background-size: cover;
+  background-position: 100% 50%;
   z-index: -1;
 }
 
