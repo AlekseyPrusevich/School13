@@ -177,6 +177,7 @@ p {
   position: absolute;
   transform: translate(-6px, 0);
   margin-top: 28px;
+  margin-right: 12px;
   right: 0;
 }
 
